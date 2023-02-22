@@ -8,7 +8,7 @@
         <i @click="$emit('delete-task', task.id)" class="fas fa-times"></i>
       </h3>
       <p>{{ task.day }}</p>
-    </div>
+    </div> 
   </template>
   
   <script>
