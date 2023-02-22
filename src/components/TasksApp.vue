@@ -1,6 +1,6 @@
 <template>
     <div :key="task.id" v-for="task in tasks">
-      <Task
+      <TaskApp
         @toggle-reminder="$emit('toggle-reminder', task.id)"
         @delete-task="$emit('delete-task', task.id)"
         :task="task"
@@ -9,14 +9,14 @@
   </template>
   
   <script>
-  import Task from './TaskApp'
+  import TaskApp from './TaskApp'
   export default {
     name: 'TasksApp',
     props: {
       tasks: Array,
     },
     components: {
-      Task,
+      TaskApp,
     },
     emits: ['delete-task', 'toggle-reminder'],
   }

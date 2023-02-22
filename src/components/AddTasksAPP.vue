@@ -24,7 +24,7 @@
   
   <script>
   export default {
-    name: 'AddTasksAPP',
+    name: 'AddTasksApp',
     data() {
       return {
         text: '',

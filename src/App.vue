@@ -11,36 +11,38 @@
 </template>
 
 <script>
-import HeaderApp from './components/HeaderApp'
-import Footer from './components/Footer'
+import HeaderApp from "./components/HeaderApp";
+import FooterApp from "./components/FooterApp";
+
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderApp,
-    Footer,
+    // eslint-disable-next-line vue/no-unused-components
+    FooterApp
   },
   data() {
     return {
-      showAddTask: false,
-    }
+      showAddTask: false
+    };
   },
   methods: {
     toggleAddTask() {
-      this.showAddTask = !this.showAddTask
-    },
-  },
-}
+      this.showAddTask = !this.showAddTask;
+    }
+  }
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 500px;
